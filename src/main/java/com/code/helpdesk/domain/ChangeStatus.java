@@ -18,7 +18,7 @@ public class ChangeStatus {
 	private Ticket ticket;
 
 	@DBRef
-	private User usechange;
+	private User userChange;
 
 	private Date dateChangeStatus;
 
@@ -40,13 +40,6 @@ public class ChangeStatus {
 		this.ticket = ticket;
 	}
 
-	public User getUsechange() {
-		return usechange;
-	}
-
-	public void setUsechange(User usechange) {
-		this.usechange = usechange;
-	}
 
 	public Date getDateChangeStatus() {
 		return dateChangeStatus;
@@ -63,5 +56,14 @@ public class ChangeStatus {
 	public void setStatus(StatusEnum status) {
 		this.status = status;
 	}
+
+	public User getUserChange() {
+		return userChange;
+	}
+
+	public void setUserChange(User userChange) {
+		this.userChange = userChange;
+	}	
+	
 
 }

@@ -2,20 +2,20 @@ package com.code.helpdesk.domain.enums;
 
 public enum StatusEnum {
 	New,
-	Assign,
+	Assigned,
 	Resolved,
 	Approved,
 	Disapproved,
-	Close;
+	Closed;
 	
 	public static StatusEnum getStatus(String status) {
 		switch (status) {
 		case "New": return New;
-		case "Assign": return Assign;
+		case "Assigned": return Assigned;
 		case "Resolved": return Resolved;
 		case "Approved": return Approved;
 		case "Disapproved": return Disapproved;
-		case "Close": return Close;
+		case "Closed": return Closed;
 		default:
 			return New;
 		}
